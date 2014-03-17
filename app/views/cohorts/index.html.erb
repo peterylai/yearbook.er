@@ -63,7 +63,37 @@
 
   <section class="students">
     
+    <header>
+      <h1>Meet the Students!</h1>
+    </header>
     
+    <div class="students-list">
+      <ul>
+        <%# @students.each |student| do %>
+        <% 15.times do %>
+          <a href="#"><li>Drew Tunney</li></a>
+          <a href="#"><li>John Hinrichs</li></a>
+        <% end %>
+        <%# end %>
+      </ul>
+    </div>
+    
+  
+    <img src=<%= asset_path 'john1.jpg' %> />
+    <div class="student-info">
+      <h3>Student Name</h3>
+      <p>
+        A Web Developer on a mission to make the Internet a beautiful place for you and me. I like my design hand-rolled and my coffee lightly sweetened.
+      </p>
+      <ul>
+        <li>LinkedIn</li>
+        <li>Github</li>
+        <li>Twitter</li>
+        <li>Portfolio</li>
+        <li>Email</li>
+      </ul>
+    </div>
+    </div>
   </section>
 
 
