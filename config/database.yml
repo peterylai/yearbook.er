@@ -1,23 +1,26 @@
+
 development:
   adapter: postgresql
   encoding: unicode
   database: yearbooker_development
   pool: 5
-  username: peterlai
+  username: nicholasbundy
   password:
+
 
 test:
   adapter: postgresql
   encoding: unicode
   database: yearbooker_test
   pool: 5
-  username: peterlai
-  password:
+  username: nicholasbundy
+
 
 production:
   adapter: postgresql
   encoding: unicode
   database: yearbooker_production
   pool: 5
-  username: peterlai
+  username: nicholasbundy
   password:
+
