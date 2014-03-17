@@ -4,7 +4,7 @@ development:
   encoding: unicode
   database: yearbooker_development
   pool: 5
-  username: nicholasbundy
+  username: peterlai
   password:
 
 
@@ -13,7 +13,7 @@ test:
   encoding: unicode
   database: yearbooker_test
   pool: 5
-  username: nicholasbundy
+  username: peterlai
 
 
 production:
@@ -21,6 +21,6 @@ production:
   encoding: unicode
   database: yearbooker_production
   pool: 5
-  username: nicholasbundy
+  username: peterlai
   password:
 
