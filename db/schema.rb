@@ -31,4 +31,18 @@ ActiveRecord::Schema.define(version: 20140317190833) do
     t.datetime "updated_at"
   end
 
+  create_table "users", force: true do |t|
+    t.string  "first_name"
+    t.string  "last_name"
+    t.string  "email"
+    t.string  "password_digest"
+    t.string  "profile_pic"
+    t.string  "github"
+    t.string  "linkedin"
+    t.string  "bio"
+    t.boolean "admin"
+    t.string  "website"
+    t.string  "employer"
+  end
+
 end
