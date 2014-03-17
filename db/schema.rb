@@ -11,16 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20140317162946) do
+=======
+ActiveRecord::Schema.define(version: 20140317190833) do
+>>>>>>> cef3e80bf135356cc88f6bf0f4dbe7e2835d4d83
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+<<<<<<< HEAD
   create_table "cohorts", force: true do |t|
     t.string   "location"
     t.string   "year"
     t.string   "month"
     t.string   "nickname"
+=======
+  create_table "campuses", force: true do |t|
+    t.string   "location"
+>>>>>>> cef3e80bf135356cc88f6bf0f4dbe7e2835d4d83
     t.datetime "created_at"
     t.datetime "updated_at"
   end

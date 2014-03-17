@@ -3,7 +3,11 @@ development:
   encoding: unicode
   database: yearbooker_development
   pool: 5
+<<<<<<< HEAD
   username: peterlai
+=======
+  username: grangerabuhoff
+>>>>>>> cef3e80bf135356cc88f6bf0f4dbe7e2835d4d83
   password:
 
 test:
@@ -11,7 +15,11 @@ test:
   encoding: unicode
   database: yearbooker_test
   pool: 5
+<<<<<<< HEAD
   username: peterlai
+=======
+  username: grangerabuhoff
+>>>>>>> cef3e80bf135356cc88f6bf0f4dbe7e2835d4d83
   password:
 
 production:
@@ -19,5 +27,10 @@ production:
   encoding: unicode
   database: yearbooker_production
   pool: 5
+<<<<<<< HEAD
   username: peterlai
   password:
+=======
+  username: grangerabuhoff
+  password:
+>>>>>>> cef3e80bf135356cc88f6bf0f4dbe7e2835d4d83
