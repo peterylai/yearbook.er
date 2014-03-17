@@ -1,6 +1,11 @@
+
 <%= form_for @cohort, url: {action: "create"},
 html: {class: "class_form"} do |f| %>
-  Location: <%= f.text_field :location %>
+
+<!--   <% locations_array = Campus.all.map { |campus| [campus.location, campus.id] } %> -->
+<!--   <%= options_for_select(locations_array) %> -->
+
+  Campus: <%= f.collection_select :campus_id, Campus.order(:location), :id, :location, include_blank: true %>
   Month: <%= f.text_field :month  %>
   Year: <%= f.text_field :year %>
   <%= f.file_field :cohort_photo, placeholder:"Upload Class Photo"%>
