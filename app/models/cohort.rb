@@ -1,7 +1,7 @@
 class Cohort < ActiveRecord::Base
   validates :year, presence: true
   validates :month, presence: true
-  validates :location, presence: true
+  belongs_to :campus
   has_attached_file :cohort_photo,
                     :url => "/assets/cohorts/:id/:style/:basename.:extension",
                     :path => ":rails_root/public/assets/cohorts/:id/:style/:basename.:extension"
