@@ -1,3 +1,9 @@
+
+ActiveSupport::Inflector.inflections do |inflect|
+  inflect.singular /^(campus)(es)?$/i, '\1'
+  inflect.plural  /^(campus)$/i, '\1es'
+end
+
 # Be sure to restart your server when you modify this file.
 
 # Add new inflection rules using the following format. Inflections
