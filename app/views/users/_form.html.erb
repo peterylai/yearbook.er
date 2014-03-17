@@ -19,6 +19,9 @@
   <%= f.password_field :password_confirmation %>
   <br/>
 
+  <%= f.file_field :profile_pic, placeholder:"Upload Profile Photo"%>
+  <br/>
+
 
 <%= f.submit @user.id.nil? ? "Sign up!" : "Save Changes" %>
 <% end %>
