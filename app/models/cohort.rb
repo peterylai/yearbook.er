@@ -1,5 +1,3 @@
-# class.rb
-
 class Cohort < ActiveRecord::Base
 
   has_attached_file :cohort_photo,
@@ -9,5 +7,7 @@ class Cohort < ActiveRecord::Base
   validates_attachment_content_type :cohort_photo, :content_type => ['image/jpeg', 'image/png']
   validates_attachment_size :cohort_photo, :less_than => 5.megabytes
 
-
+  validates :year, presence: true
+  validates :month, presence: true
+  validates :location, presence: true
 end

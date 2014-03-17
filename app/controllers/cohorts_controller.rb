@@ -1,4 +1,3 @@
-# cohorts_controller.rb
 class CohortsController < ApplicationController
   def new
     @cohort = Cohort.new
@@ -13,6 +12,7 @@ class CohortsController < ApplicationController
     @cohort = Cohort.find_by(id: params[:id])
   end
 
+  private 
   def cohort_params
     params.require(:cohort).permit(:nickname, :month, :year, :location, :cohort_photo)
   end
