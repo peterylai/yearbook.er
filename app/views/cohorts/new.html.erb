@@ -1,0 +1,9 @@
+<!-- new.html.erb -->
+<%= form_for @cohort, url: {action: "create"},
+html: {class: "class_form"} do |f| %>
+  Location: <%= f.text_field :location %>
+  Month: <%= f.text_field :month  %>
+  Year: <%= f.text_field :year %>
+  Nickname: <%= f.text_field :nickname %>
+  <%= f.submit "Submit" %>
+<% end %>
