@@ -10,4 +10,7 @@ Yearbooker::Application.routes.draw do
   delete "/session", to: "session#destroy"
 
   root "users#new"
+
+  get "/yearbookeradmin", to: "adminwelcome#index"
+
 end
