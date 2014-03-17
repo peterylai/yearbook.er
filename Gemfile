@@ -32,6 +32,8 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'paperclip'
+
 group :development, :test do
   gem 'ffaker'
   gem 'pry-rails'
