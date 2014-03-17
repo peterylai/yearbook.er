@@ -13,6 +13,7 @@ class CohortsController < ApplicationController
   end
 
   private 
+  
   def cohort_params
     params.require(:cohort).permit(:nickname, :month, :year, :location, :cohort_photo)
   end
