@@ -1,0 +1,5 @@
+<% if logged_in? %>
+  <p><%= link_to("Log Out #{current_user.first_name}!", "/session", method: "delete") %></p>  
+<% else %>
+  <p><%= link_to("Please Log In!","/login") %></p>
+<% end %>
