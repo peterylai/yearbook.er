@@ -16,11 +16,10 @@ class SessionController < ApplicationController
       session[:user_id] = user.id
 
       # and redirect to that user's home page
-      
       if user.type == 'Admin'
         redirect_to root_path
       else  
-        redirect_to( user_path(user) )
+        redirect_to( edit_student_path(user) )
       end
     else
 
