@@ -1,5 +1,5 @@
 Yearbooker::Application.routes.draw do
-  resources :cohorts, only: [:index, :new, :create, :show]
+  resources :cohorts, only: [:index, :new, :create, :show, :edit]
   resources :campuses, only: [:new, :create, :show]
 
   get "/signup", to: "users#new"
