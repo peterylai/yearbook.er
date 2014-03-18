@@ -3,6 +3,7 @@ class CohortsController < ApplicationController
   end
 
   def new
+    @campuses = Campus.all
     @cohort = Cohort.new
   end
 
@@ -18,6 +19,6 @@ class CohortsController < ApplicationController
   private 
   
   def cohort_params
-    params.require(:cohort).permit(:nickname, :month, :year, :location, :cohort_photo)
+    params.require(:cohort).permit(:nickname, :month, :year, :campus_id, :cohort_photo)
   end
 end
