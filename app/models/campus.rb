@@ -1,6 +1,8 @@
 class Campus < ActiveRecord::Base
  validates :location, presence: true
 
+ has_many :cohorts
+
  has_attached_file :campus_pic,
                     :url => "/assets/campuses/:id/:style/:basename.:extension",
                     :path => ":rails_root/public/assets/campuses/:id/:style/:basename.:extension"

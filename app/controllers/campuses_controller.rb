@@ -1,6 +1,7 @@
 class CampusesController < ApplicationController
   def index
     @campuses = Campus.all
+    binding.pry
   end
   
   def new
