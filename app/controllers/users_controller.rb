@@ -2,6 +2,7 @@ class UsersController < ApplicationController
 
 	def new
 		@user = User.new
+		@campuses = Campus.all
 	end
 
 	def create
