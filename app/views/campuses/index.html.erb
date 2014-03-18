@@ -6,7 +6,10 @@
     <ul class='cohort'>
       <% campus.cohorts.each do |cohort| %>
         <li>
-          <%= cohort.month %>, <%= cohort.year %>    
+          <%= cohort.month %>, <%= cohort.year %>
+          <% if current_user && current_user.is_admin? %>
+            <%= link_to "Edit", edit_cohort_path(cohort) %>
+          <% end %>
         </li>
       <% end %>
     </ul>
@@ -15,5 +18,9 @@
 </ul>
 
 <footer><div class="user_panel">
-  <p><%= link_to "Login, Old Friend...", "/login" %></p>
+  <% if !current_user %>
+    <p><%= link_to "Login, Old Friend...", "/login" %></p>
+  <% else %>
+    <p><%= link_to "Logout", "/session", method: "delete" %></p>
+  <% end %>
 </div></footer>

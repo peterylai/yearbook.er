@@ -1,6 +1,8 @@
 class CampusesController < ApplicationController
   def index
     @campuses = Campus.all
+    @user = User.find_by(params[:user_id])
+    
   end
   
   def new
