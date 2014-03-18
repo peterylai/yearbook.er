@@ -11,7 +11,7 @@ describe "admin logs in" do
   }
 
   it "logs in with admin status" do 
-    visit("/yearbookeradmin")
+    visit(root_path)
     click_link "Login, Old Friend..."
 
     fill_in "Email", with: admin.email
