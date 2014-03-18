@@ -11,4 +11,10 @@ class User < ActiveRecord::Base
 
   validates_attachment_content_type :profile_pic, :content_type => ['image/jpeg', 'image/png']
   validates_attachment_size :profile_pic, :less_than => 5.megabytes
+
+  def is_admin?
+    self.type == "Admin"
+  end
+
+
 end

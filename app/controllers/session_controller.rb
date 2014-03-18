@@ -16,7 +16,11 @@ class SessionController < ApplicationController
       session[:user_id] = user.id
 
       # and redirect to that user's home page
-      redirect_to( user_path(user) )
+      if user.type == 'Admin'
+        redirect_to root_path
+      else  
+        redirect_to( edit_student_path(user) )
+      end
     else
 
       # the email/password is wrong!

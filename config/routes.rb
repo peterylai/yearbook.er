@@ -15,4 +15,6 @@ Yearbooker::Application.routes.draw do
 
   get "/yearbookeradmin", to: "adminwelcome#index"
 
+  resources :students, only: [:edit, :update]
+
 end

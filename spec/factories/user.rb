@@ -10,6 +10,13 @@ FactoryGirl.define do
     bio { Faker::Lorem.paragraph }
     website { Faker::Internet.http_url }
     employer { Faker::Company.name }
+  end
 
+  factory :admin, class: Admin, parent: :user do 
+    type "Admin"
+  end
+
+  factory :student, class: Student, parent: :user do 
+    type "Student"
   end
 end
