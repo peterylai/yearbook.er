@@ -1,4 +1,8 @@
 class CampusesController < ApplicationController
+  def index
+    @campuses = Campus.all
+  end
+  
   def new
     @campus = Campus.new
   end

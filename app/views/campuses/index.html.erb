@@ -1,0 +1,14 @@
+<ul id='campuses'>
+<% @campuses.each do |campus| %>
+  <li><%= campus.location %>
+  <img src='<%= campus.campus_pic_file_name %>' alt='campus image'/>
+    <ul class='cohort'>
+      <% campus.cohorts.each do |cohort| %>
+        <li>
+          <%= cohort.month %>, <%= cohort.year %>    
+        </li>
+      <% end %>
+    </ul>
+  </li>  
+<% end %>
+</ul>
