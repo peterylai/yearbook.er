@@ -1,0 +1,177 @@
+
+/*FONTS*/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
+
+@font-face {
+  font-family: 'News';
+  src: <%=font_path("News7BTBoIC")%>;
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-news: 'News';
+$font-roboto: 'Roboto Slab', serif;
+$font-josefin: 'Josefin Sans', sans-serif;
+
+
+
+
+
+
+body {
+  font: 100% $font-roboto;
+}
+
+
+
+/*==========================================================================*/
+/*HEADER/ NAV BAR*/
+/*==========================================================================*/
+
+
+
+nav {
+  top: 0px;
+  border: 1px solid black;
+  height: 3.5em;
+  background: black;
+  position: fixed;
+  width: 100%;
+  display: block;
+
+  ul {
+  margin-right: 5em;
+  float: right;
+  }
+
+  li {
+  display: inline;
+  padding-left: 2.5em;
+  color: white;
+  }
+}
+
+
+/*==========================================================================*/
+/*CLASS PHOTO SECTION*/
+/*==========================================================================*/
+
+
+.cohort-photo {
+  margin-top: 50px;
+  display: block;
+  background: url(http://www.dreamboxphotography.com/images/general-assembly-real2.jpg);
+  background-size: 100%;
+  height: 770px;
+}
+
+.info-banner {
+  color: white;
+  width: 20%;
+  margin-left: 40px;
+  margin-top: 15px;
+  padding-left: 30px;
+  background: black;
+  border-top: 15px solid red;
+  padding-bottom: 10px;
+
+  span {
+  display: inline;
+  }
+
+  h2 {
+    font-size: .9em;
+    margin-bottom: -2px;
+  }
+
+  h1 {
+    width: 5px;
+    font: 220% $font-josefin;
+    color: red;
+  }
+}
+
+
+/*==========================================================================*/
+/*CLASS DESCRIPTION SECTION*/
+/*==========================================================================*/
+
+
+
+.description {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  background: firebrick;
+
+  .description-wrapper {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 70px;
+  }
+
+  h3 {
+    text-align: center;
+    color: white;
+    font-size: 3em;
+  }
+
+  h4 {
+  color: firebrick;
+  font-size: 2em;
+  }
+
+  .one-third {
+    width: 20%;
+    display: inline-block;
+    background-color: white;
+    border-radius: 55px;
+    height: 500px;
+    margin-left: 10px;
+  }
+
+  p {
+    padding: 10px;
+    font-size: 1.4em;
+  }
+
+  img {
+    text-align: center;
+  }
+}
+
+
+/*==========================================================================*/
+/*STUDENTS SECTION*/
+/*==========================================================================*/
+
+.students {
+  background-color: goldenrod;
+  margin-top: -30px;
+  color: white;
+
+  h1 {
+    padding-top: 50px;
+    text-align: center;
+  }
+  .students-list ul li {
+    color: white;
+    list-style: none;
+  }
+
+  .students-list ul a {
+    text-decoration: none;
+  }
+  .students-list ul a:hover {
+    text-decoration: underline;
+  }
+
+
+}
+
+
+

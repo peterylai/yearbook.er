@@ -1,4 +1,7 @@
 class CohortsController < ApplicationController
+  def index
+  end
+
   def new
     @cohort = Cohort.new
   end

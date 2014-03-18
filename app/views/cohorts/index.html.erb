@@ -1,0 +1,106 @@
+<div class="page-wrapper">
+  <header>
+    <nav>
+      <ul>
+        <li>the program</li>
+        <li>the students</li>
+        <li>interested?</li>
+      </ul>
+    </nav>
+  </header>
+
+
+<!-- CLASS PHOTO SECTION -->
+
+  <section class="cohort-photo">
+    <div class="info-banner">
+      <h2>general assembly</h2>
+      <h2>
+        <span>january 2014</span>
+        <span>//</span>
+        <span>New York</span>
+      </h2>
+      <h1>WEB DEVELOPMENT IMMERSIVE</h1>
+    </div>
+  </section>
+
+
+<!-- CLASS DESCRIPTION SECTION -->
+
+
+  <section class="description">
+    <header>
+      <h3>12 Weeks. All Day. Every Day.</h3>
+    </header>
+    <div class="description-wrapper">
+    <div class="one-third">
+      <header>
+        <h4>This!</h4>
+      </header>
+      <img src=<%= asset_path 'notebook.svg' %> />
+      <p>HTML, CSS, Ruby, Javascript, Rails, Backbone, Rspec, Jasmine and SQL are just some of the languages and frameworks we know.</p>
+    </div>
+    <div class="one-third">
+      <header>
+        <h4>This!!</h4>
+      </header>
+      <img src=<%= asset_path 'notebook.svg' %> />
+      <p>HTML, CSS, Ruby, Javascript, Rails, Backbone, Rspec, Jasmine and SQL are just some of the languages and frameworks we know.</p>
+    </div>
+    <div class="one-third">
+      <header>
+        <h4>This!!!</h4>
+      </header>
+      <img src=<%= asset_path 'notebook.svg' %> />
+      <p>HTML, CSS, Ruby, Javascript, Rails, Backbone, Rspec, Jasmine and SQL are just some of the languages and frameworks we know.</p>
+    </div>
+  </div>
+  </section>
+
+
+<!-- STUDENT INFO SECTION -->
+
+
+  <section class="students">
+    
+    <header>
+      <h1>Meet the Students!</h1>
+    </header>
+    
+    <div class="students-list">
+      <ul>
+        <%# @students.each |student| do %>
+        <% 15.times do %>
+          <a href="#"><li>Drew Tunney</li></a>
+          <a href="#"><li>John Hinrichs</li></a>
+        <% end %>
+        <%# end %>
+      </ul>
+    </div>
+    
+  
+    <img src=<%= asset_path 'john1.jpg' %> />
+    <div class="student-info">
+      <h3>Student Name</h3>
+      <p>
+        A Web Developer on a mission to make the Internet a beautiful place for you and me. I like my design hand-rolled and my coffee lightly sweetened.
+      </p>
+      <ul>
+        <li>LinkedIn</li>
+        <li>Github</li>
+        <li>Twitter</li>
+        <li>Portfolio</li>
+        <li>Email</li>
+      </ul>
+    </div>
+    </div>
+  </section>
+
+
+<!-- SPECIAL THANKS SECTION -->
+
+
+  <section class="thanks"></section>
+
+  <footer></footer>
+</div>
