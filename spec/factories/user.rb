@@ -5,7 +5,6 @@ FactoryGirl.define do
     email { Faker::Internet.email }
     password "pizza"
     password_confirmation "pizza"
-    profile_pic { Faker::Internet.http_url  }
     github { Faker::Internet.http_url }
     linkedin { Faker::Internet.http_url }
     bio { Faker::Lorem.paragraph }

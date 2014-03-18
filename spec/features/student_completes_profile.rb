@@ -10,7 +10,6 @@ describe "a student user can complete their profile" do
 
 	def complete_profile(user)
 		visit "/users/#{user.id}/edit"
-		fill_in :user_profile_pic, with: user.profile_pic
 		fill_in :user_github, with: user.github
 		fill_in :user_linkedin, with: user.linkedin
 		fill_in :user_bio, with: user.bio

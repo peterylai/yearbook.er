@@ -6,7 +6,8 @@ class User < ActiveRecord::Base
 
   has_attached_file :profile_pic, :styles => {:thumb => "200x200>"},
                     :url => "/assets/users/:id/:style/:basename.:extension",
-                    :path => ":rails_root/public/assets/users/:id/:style/:basename.:extension"
+                    :path => ":rails_root/public/assets/users/:id/:style/:basename.:extension",
+                    :default_url => "/images/:style/john1.jpg"
 
   validates_attachment_content_type :profile_pic, :content_type => ['image/jpeg', 'image/png']
   validates_attachment_size :profile_pic, :less_than => 5.megabytes
