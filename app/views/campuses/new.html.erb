@@ -1,5 +1,9 @@
 <%= form_for(@campus, url: {action: "create"}) do |f| %>
     location: <%= f.text_field :location %>
+    <br/>
+
+    <%= f.file_field :campus_pic, placeholder:"Upload Campus Photo"%>
+    <br/>
     <%= f.submit "Submit" %>
 <% end %>
   

@@ -1,4 +1,7 @@
 class CohortsController < ApplicationController
+  def index
+  end
+
   def new
     @campuses = Campus.all
     @cohort = Cohort.new
@@ -14,6 +17,7 @@ class CohortsController < ApplicationController
   end
 
   private 
+  
   def cohort_params
     params.require(:cohort).permit(:nickname, :month, :year, :campus_id, :cohort_photo)
   end

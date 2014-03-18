@@ -15,6 +15,6 @@ class CampusesController < ApplicationController
   private
 
   def campus_params
-    params.require(:campus).permit(:location)
+    params.require(:campus).permit(:location, :campus_pic)
   end
 end
