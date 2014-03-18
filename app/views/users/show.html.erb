@@ -1,2 +1,6 @@
 Welcome
+Profile Page
+
+<%= render "logout" %>
 <%= image_tag @user.profile_pic.url(:thumb) %>
+<a href="/users/<%=@user.id%>/edit"><button>Edit Your Profile</button></a>
