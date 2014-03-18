@@ -1,11 +1,12 @@
 require 'spec_helper'
 describe "visit the splash page" do 
+let(:cohort) { FactoryGirl.create(:cohort) }
   it "lists all the campuses" do 
-    Campus.create({location: "NYC"})
-    Campus.create({location: "DC"})
+
 
     visit("/")
-    expect(page).to have_content("NYC")
-    expect(page).to have_content("DC") 
+    
+    expect(page.find('li', :text => cohort.campus.location)).to have_content(cohort.month)
+    expect(page.find('li', :text => cohort.campus.location)).to have_content(cohort.year)
   end
 end
