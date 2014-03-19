@@ -11,7 +11,6 @@ require 'spec_helper'
       fill_in "Email", with: admin.email
       fill_in "Password", with: admin.password
       click_button "Log in!"
-      save_and_open_page
       expect(page).to have_content "Welcome to GA"
       expect(page).to have_content "Edit"
     end 
