@@ -1,0 +1,70 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/peterlai/dev/yearbooker/app/models/campus.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/peterlai/dev/yearbooker/spec/models/cohort_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        2,
+        2,
+        2,
+        null,
+        null
+      ],
+      "/Users/peterlai/dev/yearbooker/app/models/cohort.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/peterlai/dev/yearbooker/spec/models/user_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        null,
+        1,
+        null,
+        2,
+        2,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1395241257
+  }
+}

@@ -40,10 +40,11 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'shoulda-matchers'
-  gem 'factory_girl'
   gem 'letter_opener'
   gem 'factory_girl_rails'
 end
+
+gem 'simplecov', :require => false, :group => :test
 
 # Use ActiveModel has_secure_password
  gem 'bcrypt-ruby', '~> 3.1.2'
