@@ -11,14 +11,24 @@ describe "student logs in" do
   }
 
   it "logs in with student status" do 
-    visit(root_path)
-    click_link "Login, Old Friend..."
-
-    fill_in "Email", with: student.email
-    fill_in "Password", with: student.password
-    click_button "Log in!"
-
+    login(student)
     expect(page).to have_content("Profile Page")
   end
 
+  it "logs a student out" do
+    login(student)
+    expect(page).to have_content("Profile Page")
+
+    click_link "Log Out " + student.first_name + "!"
+    expect(page).to have_content("Login, Old Friend...")    
+  end
+end
+
+def login(user)
+  visit(root_path)
+  click_link "Login, Old Friend..."
+
+  fill_in "Email", with: user.email
+  fill_in "Password", with: user.password
+  click_button "Log in!"
 end
